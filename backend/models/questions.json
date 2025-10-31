@@ -1,0 +1,148 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál es el tipo de dato que representa números enteros en C++?",
+    "options": ["a) float", "b) int", "c) double", "d) char"],
+    "correct": "b) int"
+  },
+  {
+    "id": 2,
+    "question": "¿Qué operador se usa para obtener la dirección de una variable?",
+    "options": ["a) &", "b) *", "c) ->", "d) %"],
+    "correct": "a) &"
+  },
+  {
+    "id": 3,
+    "question": "¿Cuál es la salida de: for(int i=0;i<3;i++) std::cout<<i; ?",
+    "options": ["a) 012", "b) 123", "c) 0 1 2", "d) 001122"],
+    "correct": "a) 012"
+  },
+  {
+    "id": 4,
+    "question": "¿Qué palabra clave se usa para declarar una función que no modifica el objeto en C++?",
+    "options": ["a) static", "b) virtual", "c) const", "d) mutable"],
+    "correct": "c) const"
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál es la forma correcta de reservar memoria dinámica para un entero?",
+    "options": [
+      "a) int x = new int;",
+      "b) int* p = new int;",
+      "c) new int p;",
+      "d) int p = malloc(sizeof(int));"
+    ],
+    "correct": "b) int* p = new int;"
+  },
+  {
+    "id": 6,
+    "question": "¿Qué hace el operador '*' cuando se aplica a un puntero?",
+    "options": [
+      "a) Declara un puntero",
+      "b) Suma 1 al puntero",
+      "c) Desreferencia el puntero (accede al valor apuntado)",
+      "d) Hace una multiplicación"
+    ],
+    "correct": "c) Desreferencia el puntero (accede al valor apuntado)"
+  },
+  {
+    "id": 7,
+    "question": "¿Cuál es la principal diferencia entre una referencia y un puntero en C++?",
+    "options": [
+      "a) Las referencias pueden ser null, los punteros no",
+      "b) Un puntero puede cambiar a qué apunta; una referencia no puede reseleccionarse",
+      "c) Las referencias usan '*', los punteros usan '&'",
+      "d) No hay diferencia"
+    ],
+    "correct": "b) Un puntero puede cambiar a qué apunta; una referencia no puede reseleccionarse"
+  },
+  {
+    "id": 8,
+    "question": "¿Qué es un constructor en C++?",
+    "options": [
+      "a) Una función que destruye objetos",
+      "b) Una función miembro especial que inicializa objetos",
+      "c) Un tipo de dato",
+      "d) Un archivo de cabecera"
+    ],
+    "correct": "b) Una función miembro especial que inicializa objetos"
+  },
+  {
+    "id": 9,
+    "question": "¿Cuál es la palabra clave para declarar herencia pública?",
+    "options": ["a) implements", "b) inherits", "c) : public", "d) extends"],
+    "correct": "c) : public"
+  },
+  {
+    "id": 10,
+    "question": "¿Qué hace la palabra clave virtual en un método de clase?",
+    "options": [
+      "a) Evita que el método sea sobrecargado",
+      "b) Indica que el método puede ser sobrescrito dinámicamente por clases derivadas",
+      "c) Marca el método como privado",
+      "d) Indica que el método es estático"
+    ],
+    "correct": "b) Indica que el método puede ser sobrescrito dinámicamente por clases derivadas"
+  },
+  {
+    "id": 11,
+    "question": "¿Qué contenedor de la STL es más apropiado para acceso por índice y crecimiento dinámico?",
+    "options": ["a) std::list", "b) std::map", "c) std::vector", "d) std::set"],
+    "correct": "c) std::vector"
+  },
+  {
+    "id": 12,
+    "question": "¿Cómo incluyes la cabecera para usar std::string?",
+    "options": [
+      "a) #include <string>",
+      "b) #include <cstring>",
+      "c) #include <str>",
+      "d) using namespace std::string;"
+    ],
+    "correct": "a) #include <string>"
+  },
+  {
+    "id": 13,
+    "question": "¿Cuál es el resultado de comparar cadenas con '==' cuando usas std::string?",
+    "options": [
+      "a) Compara punteros (direcciones)",
+      "b) Compara contenido de las cadenas",
+      "c) Da error de compilación",
+      "d) Solo compila en C"
+    ],
+    "correct": "b) Compara contenido de las cadenas"
+  },
+  {
+    "id": 14,
+    "question": "¿Para qué sirve la palabra clave 'template' en C++?",
+    "options": [
+      "a) Definir macros",
+      "b) Crear funciones o clases genéricas que operan con tipos paramétricos",
+      "c) Compilar código en paralelo",
+      "d) Declarar variables globales"
+    ],
+    "correct": "b) Crear funciones o clases genéricas que operan con tipos paramétricos"
+  },
+  {
+    "id": 15,
+    "question": "¿Cuál es la forma correcta de liberar memoria asignada con new[]?",
+    "options": [
+      "a) delete p;",
+      "b) free(p);",
+      "c) delete[] p;",
+      "d) release p;"
+    ],
+    "correct": "c) delete[] p;"
+  },
+  {
+    "id": 16,
+    "question": "¿Qué es RAII en C++?",
+    "options": [
+      "a) Una técnica de manejo de errores basada en macros",
+      "b) Resource Acquisition Is Initialization: gestionar recursos mediante objetos y sus destructores",
+      "c) Un estándar de concurrencia",
+      "d) Un tipo de puntero inteligente"
+    ],
+    "correct": "b) Resource Acquisition Is Initialization: gestionar recursos mediante objetos y sus destructores"
+  }
+]
