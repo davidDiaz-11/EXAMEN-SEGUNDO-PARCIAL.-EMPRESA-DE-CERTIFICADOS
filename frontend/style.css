@@ -69,7 +69,6 @@ nav a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.3s;
 }
 
 .btn-login:hover {
@@ -115,7 +114,6 @@ nav a:hover {
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 .cta-btn:hover {
