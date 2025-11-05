@@ -7,7 +7,6 @@ frameworks de desarrollo. Tu empresa oferta 4 certificaciones, pero solo una (la
 equipo elijan) estará funcionando el examen de certificación.
 
 Objetivo funcional:
-
 • Solo usuarios que hicieron login y pagaron su examen (bandera booleana) pueden
 aplicar el examen.
 
