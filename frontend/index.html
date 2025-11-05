@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCertify - Plataforma de Certificaciones</title>
+
+  <!-- Favicon (ambas rutas por compatibilidad) -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" href="/frontend/img/favicon.jpg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/favicon.jpg" alt="Logo"> <!-- Favicon -->
+      <span>CodeCertify</span>
+    </div>
+
+    <!-- Eslogan centrado -->
+    <div class="slogan">
+      <p>"Si lo puedes imaginar, lo puedes programar"</p>
+    </div>
+
+    <!-- Navegación -->
+    <nav>
+      <a id="btnNosotros">Nosotros</a>
+      <a id="btnLogin" class="btn-login">Iniciar Sesión</a>
+      <a id="btnContacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+  <section class="hero">
+    <div class="hero-logo">
+      <img src="img/logo.png" alt="Logo Grande">
+    </div>
+
+    <h1>Certifícate como un <span>Desarrollador Profesional</span></h1>
+    <p><strong>Domina el código, demuestra tu nivel y valida tus habilidades en los lenguajes más demandados del
+        mercado.</strong></p>
+    <button class="cta-btn">Ver Certificaciones</button>
+  </section>
+
+  <!-- Ventana Nosotros -->
+  <div id="modalNosotros" class="modal">
+    <div class="modal-content">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        En <strong>CodeCertify</strong> creemos que la excelencia en programación se demuestra con práctica y
+        conocimiento real.
+        Nuestra plataforma ofrece certificaciones profesionales en lenguajes y frameworks líderes de la industria.
+        Con un equipo de instructores expertos, ayudamos a los desarrolladores a validar sus habilidades y destacar en
+        el mundo laboral.
+      </p>
+      <p>
+        Con sede en Aguascalientes, México. Comprometidos con la calidad, la innovación y la enseñanza de alto nivel.
+      </p>
+
+      <!-- Nombres de instructores -->
+      <h3>Instructores</h3>
+      <ul class="instructores-lista">
+        <li><strong>Ana López</strong> — Ing. en Sistemas (C++ / Arquitectura)</li>
+        <li><strong>Carlos Ramírez</strong> — Mtro. en Data Science (Python / ML)</li>
+        <li><strong>María González</strong> — Ing. en Software (Java / Backend)</li>
+        <li><strong>Javier Martínez</strong> — Desarrollador Fullstack (JavaScript / Node.js)</li>
+      </ul>
+
+      <button class="close-btn" id="cerrarModal">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Modal Login -->
+  <div id="modalLogin" class="modal">
+    <div class="modal-content">
+      <h2>Iniciar Sesión</h2>
+      <form id="loginForm">
+        <input type="text" id="account" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="loginError" style="color: #ff6b6b; display: none; margin-top: 10px;"></p>
+      <button class="close-btn" id="cerrarLogin">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Certificaciones -->
+  <section id="certificacionesMenu" class="certificaciones-menu" style="display: none;">
+    <div class="certificaciones-container">
+      <h2>Certificaciones Disponibles</h2>
+      <div class="certificaciones-grid">
+
+        <div class="certificacion-card active">
+          <img src="/frontend/img/c++.png" alt="C++ Logo">
+          <h3>Certificación C++</h3>
+          <p>Certifícate en uno de los lenguajes más potentes y versátiles</p>
+          <p class="precio">Costo: <span class="precio-valor">$1,200 MXN</span></p>
+          <p>Tiempo. 20 minutos</p>
+          <p>Calificacion Minima 6/8</p>
+          <ul class="ventajas-lista">
+            <li>Dominio de programación orientada a objetos</li>
+            <li>Optimización y gestión de memoria</li>
+            <li>Desarrollo de aplicaciones de alto rendimiento</li>
+          </ul>
+          <button class="cert-btn active">Comenzar</button>
+        </div>
+
+        <div class="certificacion-card disabled">
+          <img src="/frontend/img/Python.png" alt="Python Logo">
+          <h3>Certificación Python</h3>
+          <p>Próximamente disponible</p>
+          <p class="precio">Costo: <span class="precio-valor">$1,000 MXN</span></p>
+          <p class="fecha-disponible">Disponible: 15 de diciembre de 2025</p>
+          <ul class="ventajas-lista">
+            <li>Ciencia de datos y machine learning</li>
+            <li>Desarrollo web con Django/Flask</li>
+            <li>Automatización y scripting</li>
+          </ul>
+          <button class="cert-btn" disabled>No disponible</button>
+        </div>
+
+        <div class="certificacion-card disabled">
+          <img src="/frontend/img/java.jpg" alt="Java Logo">
+          <h3>Certificación Java</h3>
+          <p>Próximamente disponible</p>
+          <p class="precio">Costo: <span class="precio-valor">$900 MXN</span></p>
+          <p class="fecha-disponible">Disponible: 10 de enero de 2026</p>
+          <ul class="ventajas-lista">
+            <li>Desarrollo empresarial</li>
+            <li>Aplicaciones Android</li>
+            <li>Sistemas distribuidos</li>
+          </ul>
+          <button class="cert-btn" disabled>No disponible</button>
+        </div>
+
+        <div class="certificacion-card disabled">
+          <img src="/frontend/img/js.png" alt="JavaScript Logo">
+          <h3>Certificación JavaScript</h3>
+          <p>Próximamente disponible</p>
+          <p class="precio">Costo: <span class="precio-valor">$800 MXN</span></p>
+          <p class="fecha-disponible">Disponible: 30 de noviembre de 2025</p>
+          <ul class="ventajas-lista">
+            <li>Desarrollo web frontend</li>
+            <li>Aplicaciones Node.js</li>
+            <li>Desarrollo fullstack</li>
+          </ul>
+          <button class="cert-btn" disabled>No disponible</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="contacto-section">
+    <div class="contact-container">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas o quieres más información? Escríbenos y te responderemos a la brevedad.</p>
+
+      <form id="contactForm">
+        <input type="text" id="contactName" placeholder="Nombre" required>
+        <input type="email" id="contactEmail" placeholder="Correo electrónico" required>
+        <input type="text" id="contactSubject" placeholder="Asunto" required>
+        <textarea id="contactMessage" placeholder="Mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <p id="contactSuccess" style="color: #28a745; display: none; margin-top: 10px;">
+        Mensaje enviado. Gracias por contactarnos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CodeCertify | Todos los derechos reservados</p>
+    <div class="social">
+      <a href="https://www.instagram.com/codecertify?igsh=ZHFnNzNwcXhsOHJv" target="_blank">
+        <img src="img/instagram.png" alt="Instagram">
+      </a>
+    </div>
+  </footer>
+
+  <!-- Librería SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Script principal -->
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen - CodeCertify</title>
+  <!-- ✅ Soporte doble de favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" type="image/jpeg" href="/frontend/img/favicon.jpg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <!-- ✅ Si la ruta /frontend/img no existe, toma img/logo.png -->
+      <img src="/frontend/img/favicon.jpg" onerror="this.src='img/logo.png'" alt="Logo">
+      <span>CodeCertify</span>
+    </div>
+  </header>
+
+  <div class="exam-container">
+    <div class="exam-header">
+      <div class="user-info">
+        <span id="userName">Usuario</span>
+        <div id="examButtonContainer"></div>
+      </div>
+      <div id="timer" class="timer" style="display: none; align-items: center; gap:8px;">
+        <strong>Tiempo restante:</strong>
+        <span id="countdown">10</span>s
+      </div>
+      <button class="logout-btn" id="logoutBtn">Cerrar Sesión</button>
+    </div>
+
+    <div id="errorMessage" class="error" style="display: none;"></div>
+    <div id="examContent" class="loading">Cargando examen...</div>
+  </div>
+
+  <footer>
+    © 2025 CodeCertify | Todos los derechos reservados
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="exam.js"></script>
+</body>
+
+</html>
+
