@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "account": "alex_garcia",
+    "password": "Al3x!2025",
+    "name": "Alex García",
+    "paid": false,
+    "hasTakenExam": false
+  },
+  {
+    "id": 8,
+    "account": "laura_mendoza",
+    "password": "LauraM$88",
+    "name": "Laura Mendoza",
+    "paid": false,
+    "hasTakenExam": false
+  },
+  {
+    "id": 9,
+    "account": "carlos_ramos",
+    "password": "C@rl0sR12",
+    "name": "Carlos Ramos",
+    "paid": true,
+    "hasTakenExam": true
+  },
+  {
+    "id": 10,
+    "account": "paula_vazquez",
+    "password": "PaulaV!34",
+    "name": "Paula Vázquez",
+    "paid": true,
+    "hasTakenExam": false
+  }
+]
